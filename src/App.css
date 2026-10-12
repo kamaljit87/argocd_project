@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.title {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.count {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #4f46e5;
+  line-height: 1;
+  margin-bottom: 32px;
+  font-variant-numeric: tabular-nums;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn {
+  flex: 1;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:focus-visible {
+  outline: 3px solid #a5b4fc;
+  outline-offset: 2px;
+}
+
+.btn-increment {
+  background: #10b981;
+}
+
+.btn-decrement {
+  background: #ef4444;
+}
+
+.btn-reset {
+  background: #6b7280;
+}
+
+.version {
+  margin-top: 28px;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: 32px 20px;
+  }
+
+  .count {
+    font-size: 4.5rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
